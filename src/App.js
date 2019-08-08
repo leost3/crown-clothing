@@ -5,19 +5,16 @@ import './App.css';
 
 
 import HomePage from './pages/homepage/homepage.component';
+import ShopPage from './pages/shop/shop.component';
 
-const HatsPage = () => (
-  <div>
-    hats
-  </div>
-)
+
 
 
 const App = () => (
     <div>
       <Switch>
         <Route path='/' exact component={HomePage} />
-        <Route path='/shop/hats' exact component={HatsPage} />
+        <Route path='/shop' exact component={ShopPage} />
       </Switch>
     </div>
 )
